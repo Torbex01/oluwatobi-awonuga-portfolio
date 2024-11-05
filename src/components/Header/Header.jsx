@@ -30,9 +30,9 @@ const Container = styled.div `
    align-items: center;
    
      }
-    /* background-color: pink; */
-    max-width: 90%;
-    margin: 0 auto;
+    background-color: pink;
+    /* max-width: 100%; */
+    margin: 0 20px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -56,10 +56,10 @@ const Navs = styled.div `
  @media (max-width: 900px) {
    justify-content: space-evenly;
    align-items: center;
-   width: 60%;
+   width: 750%;
    font-size: 10px;
     section{
-        width: 75%;
+        width: 40%;
         justify-content: space-evenly;
         
     }
