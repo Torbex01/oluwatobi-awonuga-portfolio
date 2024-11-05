@@ -13,7 +13,7 @@ const Intro = () =>{
                         </h1>
                         <h4> A full-stack development enthusiast
                              with experstise in front-end development, 
-                            passionate about building easily accessible and user friendly websites </h4>
+                            passionate about building easily accessible and user friendly websites. </h4>
                     </TextArea>
                     <ImageArea>
                         <img src= {picture} alt="my image" />
@@ -44,9 +44,10 @@ const Wrapper = styled.div `
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    margin-top: 20px;
     @media (max-width: 900px) {
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
    text-align: left;
    gap: 30px;
    flex-direction: column-reverse;
@@ -92,12 +93,12 @@ justify-content: center;
 img{
     
     @media (max-width: 900px) {
-        width: 98%;
+        width: 90%;
     }
     width: 99%;
     height: 100%;
     object-fit: cover;
-    border-radius: 70px;
+    border-radius: 15px;
     border: 3px solid #412f63bc;
 }
 `

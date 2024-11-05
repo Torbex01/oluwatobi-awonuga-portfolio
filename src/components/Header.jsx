@@ -29,6 +29,7 @@ const Container = styled.div `
    justify-content: space-evenly;
    align-items: center;
    
+   
      }
     /* background-color: pink; */
     /* max-width: 100%; */
@@ -38,6 +39,7 @@ const Container = styled.div `
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `
 const Logo = styled.div `
      @media (max-width: 900px) {
