@@ -41,7 +41,7 @@ const Container = styled.div `
 const Logo = styled.div `
      @media (max-width: 900px) {
         h2{
-            font-size: 17px;
+            font-size: 12px;
         }
      }
     color: #18195f;
@@ -57,7 +57,7 @@ const Navs = styled.div `
    justify-content: space-evenly;
    align-items: center;
    width: 60%;
-   font-size: 12px;
+   font-size: 10px;
     section{
         width: 50%;
         justify-content: space-evenly;
