@@ -59,7 +59,7 @@ const Navs = styled.div `
    width: 60%;
    font-size: 10px;
     section{
-        width: 50%;
+        width: 75%;
         justify-content: space-evenly;
         
     }
