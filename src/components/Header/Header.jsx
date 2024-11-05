@@ -31,7 +31,7 @@ const Container = styled.div `
    
      }
     /* background-color: pink; */
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
     height: 60px;
     display: flex;
@@ -41,7 +41,7 @@ const Container = styled.div `
 const Logo = styled.div `
      @media (max-width: 900px) {
         h2{
-            font-size: 20px;
+            font-size: 17px;
         }
      }
     color: #18195f;
@@ -57,9 +57,11 @@ const Navs = styled.div `
    justify-content: space-evenly;
    align-items: center;
    width: 60%;
+   font-size: 12px;
     section{
         width: 50%;
         justify-content: space-evenly;
+        
     }
      }
 /* background-color: blue; */
