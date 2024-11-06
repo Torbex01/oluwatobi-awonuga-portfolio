@@ -72,6 +72,7 @@ const Container = styled.div`
 
     h1{
         color: #0d0e44;
+        font-weight: 800;
     }
 `
 const CardsBox = styled.div`

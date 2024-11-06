@@ -13,9 +13,9 @@ const Header = () =>{
                     <nav>Projects</nav>
                     <nav>Contact</nav>
                     <section>
-                        <h2><FaGithub /></h2>
-                        <h2> <FaSquareXTwitter /> </h2>
-                        <h2> <FaLinkedin /> </h2>
+                        <a href="https://github.com/Torbex01"><h2><FaGithub /></h2></a>
+                        <a href="linkedin.com/in/oluwatobi-awonuga"><h2> <FaSquareXTwitter /> </h2></a>
+                        <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaLinkedin /> </h2></a>
                     </section>
                 </Navs>
             </Container> 
@@ -84,6 +84,9 @@ section{
     display: flex;
     width: 30%;
     justify-content: space-evenly;
-    
+   a{
+    text-decoration: none;
+    color: inherit;
+   } 
 }
 `
