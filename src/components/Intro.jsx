@@ -37,7 +37,7 @@ const Container = styled.div `
     box-sizing: border-box;
 `
 const Wrapper = styled.div ` 
-    width: 85%;
+    width: 95%;
     height: inherit;
     /* background-color: saddlebrown; */
     display: flex;
@@ -46,8 +46,8 @@ const Wrapper = styled.div `
     gap: 20px;
     margin-top: 20px;
     @media (max-width: 900px) {
-   justify-content: center;
-   /* align-items: center; */
+   /* justify-content: center; */
+   align-items: center;
    text-align: left;
    gap: 30px;
    flex-direction: column-reverse;
@@ -99,6 +99,7 @@ img{
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    border: 3px solid #412f63bc;
+    /* border: 3px solid #412f63bc; */
+    box-shadow: rgba(0, 0, 200, 1) 0px 5px 15px;
 }
 `
