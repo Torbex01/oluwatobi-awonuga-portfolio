@@ -10,7 +10,7 @@ const Projects = () =>{
     return(
         <div>
          <Container>
-               <h1>Projects</h1>
+               <h1>PROJECTS</h1>
            <CardsBox>
            <ProjectCard title= "KUDA Page Clone" 
                         image= {kudapic}
@@ -58,6 +58,8 @@ const Projects = () =>{
 export default Projects
 
 const Container = styled.div`
+    box-shadow: 0 0.5px 0 gray, 0 -0.5px 0 gray;
+    padding-bottom: 50px;
     max-width: 1280px;
     margin: 80px auto;
     display: flex;
@@ -67,6 +69,10 @@ const Container = styled.div`
     text-align: center;
     align-items: center;
     /* background-color: yellow; */
+
+    h1{
+        color: #0d0e44;
+    }
 `
 const CardsBox = styled.div`
     display: flex;
