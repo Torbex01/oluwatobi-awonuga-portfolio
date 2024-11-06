@@ -89,5 +89,6 @@ a{
     justify-content: center;
     gap: 5px;
     width: 270px;
+    font-size: 12px;
 }
 `
