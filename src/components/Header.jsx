@@ -14,8 +14,8 @@ const Header = () =>{
                     <nav>Contact</nav>
                     <section>
                         <a href="https://github.com/Torbex01"><h2><FaGithub /></h2></a>
-                        <a href="linkedin.com/in/oluwatobi-awonuga"><h2> <FaSquareXTwitter /> </h2></a>
-                        <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaLinkedin /> </h2></a>
+                        <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaSquareXTwitter /> </h2></a>
+                        <a href="https://www.linkedin.com/in/oluwatobi-awonuga/"><h2> <FaLinkedin /> </h2></a>
                     </section>
                 </Navs>
             </Container> 

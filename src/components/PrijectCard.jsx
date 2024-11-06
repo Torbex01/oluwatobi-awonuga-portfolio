@@ -47,7 +47,7 @@ const Container = styled.div`
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         border-radius: 17px;
         object-fit: contain;
-        /* background-color: #fff; */
+        background-color: #fff;
     }
 
     h2{
@@ -90,5 +90,6 @@ a{
     gap: 5px;
     width: 270px;
     font-size: 12px;
+    font-weight: 500;
 }
 `
