@@ -18,6 +18,10 @@ const Intro = () =>{
                     <ImageArea>
                         <img src= {picture} alt="my image" />
                     </ImageArea>
+
+                    <TechStack>
+
+                    </TechStack>
                 </Wrapper>
             </Container>
         </div>
@@ -103,3 +107,4 @@ img{
     box-shadow: rgba(0, 0, 200, 1) 0px 5px 15px;
 }
 `
+const TechStack = styled.div``

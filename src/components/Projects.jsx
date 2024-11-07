@@ -58,7 +58,8 @@ const Projects = () =>{
 export default Projects
 
 const Container = styled.div`
-    box-shadow: 0 0.5px 0 gray, 0 -0.5px 0 gray;
+    /* box-shadow: 0 0.5px 0 gray, 0 -0.5px 0 gray; */
+    border-top: 1px solid gray;
     padding-bottom: 50px;
     max-width: 1280px;
     margin: 80px auto;

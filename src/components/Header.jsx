@@ -14,8 +14,8 @@ const Header = () =>{
                     <nav>Contact</nav>
                     <section>
                         <a href="https://github.com/Torbex01"><h2><FaGithub /></h2></a>
-                        <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaSquareXTwitter /> </h2></a>
-                        <a href="https://www.linkedin.com/in/oluwatobi-awonuga/"><h2> <FaLinkedin /> </h2></a>
+                        <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaSquareXTwitter/> </h2></a>
+                        <a href="https://www.linkedin.com/in/oluwatobi-awonuga/"><h2> <FaLinkedin/> </h2></a>
                     </section>
                 </Navs>
             </Container> 
@@ -45,7 +45,7 @@ const Logo = styled.div `
         padding-left: 15px;
      @media (max-width: 900px) {
         h2{
-            font-size: 12px;
+            font-size: 15px;
         }
      }
     color: #18195f;
@@ -61,7 +61,8 @@ const Navs = styled.div `
    justify-content: space-evenly;
    align-items: center;
    width: 70%;
-   font-size: 10px;
+   font-size: 11px;
+   font-weight: 900;
     section{
         width: 40%;
         justify-content: space-evenly;
@@ -77,7 +78,7 @@ align-items: center;
 justify-content: space-evenly;
 
 color: #424242;
-font-size: 17px;
+font-size: 18px;
 font-weight: 600;
 
 section{
