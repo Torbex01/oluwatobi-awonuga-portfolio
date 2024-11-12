@@ -84,7 +84,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 50px;
     @media (max-width: 900px){
         width: 80%;
     }

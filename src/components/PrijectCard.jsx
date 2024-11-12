@@ -29,7 +29,7 @@ export default ProjectCard
 const Container = styled.div`
     background-color: rgba(221, 216, 247, 0.5);
     padding: 40px 20px;
-    max-width: 300px;
+    max-width: 270px;
     height: 430px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* border: 2px solid red; */
