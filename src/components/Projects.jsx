@@ -62,7 +62,7 @@ const Container = styled.div`
     border-top: 1px solid gray;
     padding-bottom: 50px;
     max-width: 1280px;
-    margin: 80px auto;
+    margin: 80px 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -74,6 +74,9 @@ const Container = styled.div`
     h1{
         color: #0d0e44;
         font-weight: 800;
+        @media (max-width: 900px){
+            font-size: 28px;
+        }
     }
 `
 const CardsBox = styled.div`

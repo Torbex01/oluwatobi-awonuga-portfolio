@@ -71,6 +71,10 @@ const Container = styled.div`
         font-size: 35px;
         color: #0d0e44;
         font-weight: 800;
+
+        @media (max-width: 900px){
+            font-size: 28px;
+        }
     }
 `
 const Wrapper = styled.div`
@@ -81,6 +85,9 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    @media (max-width: 900px){
+        width: 80%;
+    }
 `
 const ContactBox = styled.div`
 /* background-color: blueviolet; */
@@ -88,6 +95,9 @@ h2{
     color: #0d0e44;
     font-weight: 800;
     text-align: center;
+    @media (max-width: 900px){
+        font-size: 18px;
+    }
 }
 padding: 0 5px;
 border-radius: 20px;
@@ -96,7 +106,10 @@ flex-direction: column;
 flex-wrap: wrap;
 width: 330px;
 height: 200px;
-border: 1px solid gray;
+@media (max-width: 900px){
+    max-height: 170px;
+}
+/* border: 1px solid gray; */
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 gap: 20px;
 /* justify-content: center; */
@@ -112,9 +125,14 @@ section{
         line-height: 1;
         margin: 0;
     }
-
+    @media (max-width: 900px){
+        h1{
+            font-size: 30px;
+        }
+    }
     
 }
+
 
 `
 const FormBox = styled.form`
@@ -124,7 +142,7 @@ max-width: 330px;
 min-height: 350px;
 border-radius: 15px;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-padding: 20px 10px;
+padding: 20px 20px;
 margin: 0 auto;
 display: flex;
 flex-direction: column;
@@ -136,6 +154,9 @@ h2{
     font-weight: 800;
     text-align: center;
     margin-bottom: 0;
+    @media (max-width: 900px){
+        font-size: 18px;
+    }
 }
 label{
     color: #be0707;

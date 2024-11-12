@@ -56,6 +56,8 @@ const Wrapper = styled.div `
    gap: 30px;
    flex-direction: column-reverse;
    box-sizing: border-box;
+   width: 85%;
+   
     }
 `
 const TextArea = styled.div `
@@ -78,7 +80,15 @@ const TextArea = styled.div `
         line-height: 1.3;
         font-weight: 800;
         font-size: 50px;
-    
+        @media (max-width: 900px){
+            font-size: 25px;
+        }
+  }
+
+  h4{
+    @media (max-width: 900px){
+        font-size: 14px;
+    }
   }
 `
 const ImageArea = styled.div `
@@ -97,14 +107,14 @@ justify-content: center;
 img{
     
     @media (max-width: 900px) {
-        width: 90%;
+        width: 70%;
     }
     width: 99%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
     /* border: 3px solid #412f63bc; */
-    box-shadow: rgba(0, 0, 200, 1) 0px 5px 15px;
+    box-shadow: rgb(0, 0, 200, 0.5) 0px 5px 15px;
 }
 `
 const TechStack = styled.div``

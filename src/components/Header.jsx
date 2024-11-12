@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 const Header = () =>{
     return(
         <div>
@@ -9,15 +11,22 @@ const Header = () =>{
                     <h2>OLUWATOBI</h2>
                 </Logo>
                 <Navs>
-                    <nav>About</nav>
-                    <nav>Projects</nav>
-                    <nav>Contact</nav>
+                    <main>
+                         <Link to="/#about">About</Link>
+                         <Link to={'/#projects'} >Projects</Link>
+                         <Link to='/#contact'>Contact</Link>
+                    </main>  
                     <section>
                         <a href="https://github.com/Torbex01"><h2><FaGithub /></h2></a>
                         <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaSquareXTwitter/> </h2></a>
                         <a href="https://www.linkedin.com/in/oluwatobi-awonuga/"><h2> <FaLinkedin/> </h2></a>
                     </section>
+                    <Ham>
+                    <h2><RxHamburgerMenu size={22} /></h2>
+                    </Ham>
+                    
                 </Navs>
+               
             </Container> 
         </div>
     )
@@ -45,7 +54,7 @@ const Logo = styled.div `
         padding-left: 15px;
      @media (max-width: 900px) {
         h2{
-            font-size: 15px;
+            font-size: 20px;
         }
      }
     color: #18195f;
@@ -58,17 +67,15 @@ const Logo = styled.div `
 
 const Navs = styled.div `
  @media (max-width: 900px) {
-   justify-content: space-evenly;
+   justify-content: right  ;
    align-items: center;
    width: 70%;
    font-size: 11px;
-   font-weight: 900;
-    section{
-        width: 40%;
-        justify-content: space-evenly;
-        
-    }
-     }
+   font-weight: 900; 
+   main{
+    display: none;
+   }
+}
 /* background-color: blue; */
 height: inherit;
 padding-right: -15px;
@@ -89,5 +96,19 @@ section{
     text-decoration: none;
     color: inherit;
    } 
+   @media (max-width: 900px) {
+    display: none;
+   }
 }
+`
+const Ham = styled.div`
+display: none;
+
+@media (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+
+   }
 `
