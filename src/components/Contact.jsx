@@ -56,10 +56,13 @@ const Contact = () => {
 export default Contact
 
 const Container = styled.div`
-     border-top: 1px solid gray;
+     /* border-top: 1px solid gray; */
+     background-color: rgba(219, 232, 235, 0.5);
     padding-bottom: 50px;
     max-width: 1280px;
-    margin: 80px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -90,7 +93,7 @@ const Wrapper = styled.div`
     }
 `
 const ContactBox = styled.div`
-/* background-color: blueviolet; */
+background-color: #fff;
 h2{
     color: #0d0e44;
     font-weight: 800;
@@ -136,7 +139,7 @@ section{
 
 `
 const FormBox = styled.form`
-/* background-color: palegreen; */
+background-color: #fff;
 /* border: 1px solid black; */
 max-width: 330px;
 min-height: 350px;
@@ -168,6 +171,7 @@ input{
     height: 40px;
     border-radius: 8px;
     margin-bottom: 10px;
+    border: 2px solid #f3f0f0;
 }
 
 .msg{

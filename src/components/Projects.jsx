@@ -59,16 +59,19 @@ export default Projects
 
 const Container = styled.div`
     /* box-shadow: 0 0.5px 0 gray, 0 -0.5px 0 gray; */
-    border-top: 1px solid gray;
+    /* border-top: 1px solid gray; */
     padding-bottom: 50px;
     max-width: 1280px;
-    margin: 80px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
+    gap: 30px;
     /* background-color: yellow; */
 
     h1{
@@ -85,5 +88,5 @@ const CardsBox = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 `

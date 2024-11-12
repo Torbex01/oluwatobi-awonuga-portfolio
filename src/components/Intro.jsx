@@ -30,11 +30,12 @@ const Intro = () =>{
 export default Intro
 
 const Container = styled.div `
-    /* background-color: yellow; */
+   background-color: rgba(219, 232, 235, 0.5);
      max-width: 1280px;
     min-height: calc(100vh - 60px);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +62,7 @@ const Wrapper = styled.div `
     }
 `
 const TextArea = styled.div `
+h4{text-align: justify;}
 
 @media (max-width: 900px) {
    justify-content: center;

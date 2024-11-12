@@ -22,7 +22,7 @@ const Header = () =>{
                         <a href="https://www.linkedin.com/in/oluwatobi-awonuga/"><h2> <FaLinkedin/> </h2></a>
                     </section>
                     <Ham>
-                    <h2><RxHamburgerMenu size={22} /></h2>
+                    <h2><RxHamburgerMenu size={23} /></h2>
                     </Ham>
                     
                 </Navs>
@@ -72,9 +72,6 @@ const Navs = styled.div `
    width: 70%;
    font-size: 11px;
    font-weight: 900; 
-   main{
-    display: none;
-   }
 }
 /* background-color: blue; */
 height: inherit;
@@ -87,6 +84,17 @@ justify-content: space-evenly;
 color: #424242;
 font-size: 18px;
 font-weight: 600;
+
+main{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    @media (max-width: 900px){
+        display: none;
+    }
+
+}
 
 section{
     display: flex;
@@ -109,6 +117,11 @@ display: none;
     align-items: center;
     justify-content: center;
     margin-right: 40px;
+
+    h2{
+        font-weight: 900;
+        font-size: 30px;
+    }
 
    }
 `
