@@ -28,11 +28,14 @@ const Container = styled.div`
 background-color: rgba(219, 232, 235, 0.5);
 color: #12123d;
 min-height: calc(30vh - 60px);
+max-width: 1280px;
 display: flex;
 align-items: flex-end;
 justify-content: center;
-gap: 28px;
+gap: 25px;
 margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
 nav{
     cursor: pointer;
     font-size: 20px;
