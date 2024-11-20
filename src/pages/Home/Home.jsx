@@ -6,9 +6,9 @@ import './Home.css'
 const Home = () => {
     return(
         <div>
-         <div id="about"><Intro /> </div>  
-          <div  id="projects"><Projects /></div>
-          <Contact id="contact" />
+         <Intro /> 
+          <Projects />
+          <Contact />
         </div>
     )
 }

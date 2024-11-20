@@ -3,7 +3,17 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+import Sidebar from "./Sidebar";
 const Header = () =>{
+
+    const [toggle, setToggle] = useState(false)
+
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
+
+    console.log(toggle);
     return(
         <div>
            <Container>
@@ -12,22 +22,24 @@ const Header = () =>{
                 </Logo>
                 <Navs>
                     <main>
-                         <Link to="/#about">About</Link>
-                         <Link to={'/#projects'} >Projects</Link>
-                         <Link to='/#contact'>Contact</Link>
+                         <Link to="/">Home</Link>
+                         <Link to="/about">About</Link>
+                         <Link to={'/projects'} >Projects</Link>
+                         <Link to='/contact'>Contact</Link>
                     </main>  
                     <section>
                         <a href="https://github.com/Torbex01"><h2><FaGithub /></h2></a>
                         <a href="https://x.com/Oluwatobi_Paul1"><h2> <FaSquareXTwitter/> </h2></a>
                         <a href="https://www.linkedin.com/in/oluwatobi-awonuga/"><h2> <FaLinkedin/> </h2></a>
                     </section>
-                    <Ham>
-                    <h2><RxHamburgerMenu size={23} /></h2>
+                    <Ham onClick={handleToggle}>
+                    <h2 ><RxHamburgerMenu size={23} /></h2>
                     </Ham>
                     
                 </Navs>
-               
+                
             </Container> 
+            {toggle === false ? null : <Sidebar toggle={toggle} setToggle={setToggle} />}
         </div>
     )
 }
@@ -37,6 +49,7 @@ const Container = styled.div `
      @media (max-width: 900px) {
    justify-content: space-evenly;
    align-items: center;
+  
    
    
      }
@@ -44,11 +57,15 @@ const Container = styled.div `
     /* max-width: 100%; */
     padding: 0;
     margin: 0 0px;
+    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    position: fixed;
+    top: 0;
+    background-color: white;
 `
 const Logo = styled.div `
         padding-left: 15px;
@@ -116,11 +133,16 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
     margin-right: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    /* background-color: purple; */
 
     h2{
         font-weight: 900;
         font-size: 30px;
+        cursor: pointer;
     }
 
    }

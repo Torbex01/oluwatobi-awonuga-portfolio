@@ -6,6 +6,7 @@ const Intro = () =>{
         <div>
             <Container>
                 <Wrapper>
+                 <main>
                     <TextArea>
                         <h1>
                             Hello, <br />
@@ -19,8 +20,19 @@ const Intro = () =>{
                         <img src= {picture} alt="my image" />
                     </ImageArea>
 
+                 </main>
                     <TechStack>
-
+                            <h1>TECH STACK</h1>
+                            <div>
+                                <img src=" " alt="vs code" />
+                                <img src=" " alt="git" />
+                                <img src=" " alt="github" />
+                                <img src=" " alt="react" />
+                                <img src=" " alt="html5" />
+                                <img src=" " alt="css3" />
+                                <img src=" " alt="javascript" />
+                                <img src=" " alt="css3" />
+                            </div>
                     </TechStack>
                 </Wrapper>
             </Container>
@@ -33,6 +45,7 @@ const Container = styled.div `
    background-color: rgba(219, 232, 235, 0.5);
      max-width: 1280px;
     min-height: calc(100vh - 60px);
+    margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -46,8 +59,9 @@ const Wrapper = styled.div `
     height: inherit;
     /* background-color: saddlebrown; */
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
     @media (max-width: 900px) {
@@ -55,10 +69,28 @@ const Wrapper = styled.div `
    align-items: center;
    text-align: left;
    gap: 30px;
-   flex-direction: column-reverse;
+//    flex-direction: column;
    box-sizing: border-box;
    width: 85%;
    
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+        @media (max-width: 900px) {
+       /* justify-content: center; */
+       align-items: center;
+       text-align: left;
+       gap: 30px;
+       flex-direction: column-reverse;
+       box-sizing: border-box;
+        }
+        
     }
 `
 const TextArea = styled.div `
@@ -109,7 +141,7 @@ justify-content: center;
 img{
     
     @media (max-width: 900px) {
-        width: 70%;
+        width: 95%;
     }
     width: 99%;
     height: 100%;
@@ -119,4 +151,8 @@ img{
     box-shadow: rgb(0, 0, 200, 0.5) 0px 5px 15px;
 }
 `
-const TechStack = styled.div``
+const TechStack = styled.div`
+text-align: center;
+background-color: greenyellow;
+width: 100;
+`
