@@ -1,5 +1,12 @@
 import styled from "styled-components"
 import picture from '../assets/oluwatobiPic.jpg'
+import javaPic from '../assets/download.svg'
+import html from '../assets/check.svg'
+import css from '../assets/check2.svg'
+import vscode from '../assets/check3.svg'
+import git from '../assets/check4.svg'
+import github from '../assets/check7.svg'
+import react from '../assets/react-CHdo91hT.svg'
 
 const Intro = () =>{
     return(
@@ -23,16 +30,16 @@ const Intro = () =>{
                  </main>
                     <TechStack>
                             <h1>TECH STACK</h1>
-                            <div>
-                                <img src=" " alt="vs code" />
-                                <img src=" " alt="git" />
-                                <img src=" " alt="github" />
-                                <img src=" " alt="react" />
-                                <img src=" " alt="html5" />
-                                <img src=" " alt="css3" />
-                                <img src=" " alt="javascript" />
-                                <img src=" " alt="css3" />
-                            </div>
+                            <section>
+                                <img src={vscode} alt="vs code" />
+                                <img src={git} alt="git" />
+                                <img src={github} alt="github" />
+                                <img src={react} alt="react" />
+                                <img src={html} alt="html5" />
+                                <img src={css} alt="css3" />
+                                <img src={javaPic} alt="javascript" />
+                                
+                            </section>
                     </TechStack>
                 </Wrapper>
             </Container>
@@ -153,6 +160,41 @@ img{
 `
 const TechStack = styled.div`
 text-align: center;
-background-color: greenyellow;
-width: 100;
+background-color: #71dceb3d;
+width: 100%;
+max-height: 300px;
+display: flex;
+/* flex-wrap: wrap; */
+flex-direction: column;
+align-items: center;
+border-radius: 20px;
+
+h1{
+        text-align: center;
+        font-size: 35px;
+        color: #0d0e44;
+        font-weight: 800;
+        margin-bottom: 20px;
+        line-height: 1;
+}
+section{
+    /* background-color: brown; */
+    margin-top: 0;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7px;
+}
+
+img{
+   
+    width: 90px;
+    /* background-color: yellow; */
+    @media (max-width: 900px){
+            width: 70px;
+        }
+}
 `

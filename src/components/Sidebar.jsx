@@ -6,7 +6,8 @@ const Sidebar = ({toggle, setToggle}) => {
         setToggle(false)
     }
     return(
-        <Container>
+      <Container>
+        <Wrapper>
             <Link to="/" onClick={test} style={{ textDecoration: 'none', color: 'inherit' }}>
            <nav>Home</nav>
            </Link>
@@ -18,17 +19,24 @@ const Sidebar = ({toggle, setToggle}) => {
            
            <Link to="/contact" onClick={test} style={{ textDecoration: 'none', color: 'inherit' }}>
            <nav>Contacts</nav></Link>
-        </Container>
+        </Wrapper>
+      </Container>
+        
     )
 }
 
 export default Sidebar
-
 const Container = styled.div`
+max-width: 1280px;
+/* background-color: orange; */
+    
+`
+
+const Wrapper = styled.div`
 background-color: rgba(219, 232, 235, 0.5);
 color: #12123d;
 min-height: calc(30vh - 60px);
-max-width: 1280px;
+width: 99%;
 display: flex;
 align-items: flex-end;
 justify-content: center;
